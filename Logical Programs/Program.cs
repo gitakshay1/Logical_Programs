@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Number To choose respective Program\n1 Fibonacci Series" +
-                "\n2 Perfect Number \n3 Prime Number");
+                "\n2 Perfect Number \n3 Prime Number\n4 Reverse a Number");
             int Choise=Convert.ToInt32(Console.ReadLine());
             switch(Choise)
             {
@@ -20,6 +20,10 @@
                 case 3:
                     Prime_Number prime_Number=new Prime_Number();
                     prime_Number.PrimeNumber();
+                    break;
+                case 4:
+                    Reverse_Anumber reverse_Anumber=new Reverse_Anumber();
+                    reverse_Anumber.Reverse_Number();
                     break;
                 default:
                     Console.WriteLine("Enter valid choise");
