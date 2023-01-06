@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Number To choose respective Program\n1 Fibonacci Series" +
-                "\n2 Perfect Number \n3 Prime Number\n4 Reverse a Number\n5 Coupon Numbers");
+                "\n2 Perfect Number \n3 Prime Number\n4 Reverse a Number\n5 Coupon Numbers" +
+                "\n6 StopWatch");
             int Choise=Convert.ToInt32(Console.ReadLine());
             switch(Choise)
             {
@@ -28,6 +29,10 @@
                 case 5:
                     Coupon_Number coupon_Number=new Coupon_Number();
                     coupon_Number.CouponNumber();
+                    break;
+                case 6:
+                    StopWatch stopWatch=new StopWatch();
+                    stopWatch.Stopwatch();
                     break;
                 default:
                     Console.WriteLine("Enter valid choise");
